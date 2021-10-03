@@ -7,3 +7,4 @@ pub mod _struct;
 pub mod _enum;
 pub mod _hashmap;
 pub mod _panic;
+pub mod _generic;

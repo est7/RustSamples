@@ -7,9 +7,7 @@ use rand::{self, Rng};
 
 use crate::learning::_guess_number::guess::Guess;
 
-pub fn main() {
-    guess_number()
-}
+pub fn main() {}
 
 fn guess_number() {
     let range = 1..=100;
