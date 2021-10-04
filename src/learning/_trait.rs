@@ -1,10 +1,6 @@
 use std::fmt::Display;
 
-use crate::learning::_trait::CanPrint;
-
-pub fn main() {
-    trait_for_generic()
-}
+pub fn main() {}
 
 fn trait_for_generic() {
     pub trait CanPrint {

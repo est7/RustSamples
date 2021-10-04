@@ -9,3 +9,4 @@ pub mod _hashmap;
 pub mod _panic;
 pub mod _generic;
 pub mod _trait;
+pub mod _lifetime;

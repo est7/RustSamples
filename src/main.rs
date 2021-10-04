@@ -3,7 +3,7 @@ dead_code,
 unused_imports,
 )]
 
-use crate::learning::{_enum, _generic, _guess_number, _hashmap, _loop, _ownership, _panic, _string, _struct, _trait, _vector};
+use crate::learning::{_enum, _generic, _guess_number, _hashmap, _lifetime, _loop, _ownership, _panic, _string, _struct, _trait, _vector};
 
 mod learning;
 
@@ -19,4 +19,5 @@ fn main() {
     _panic::main();
     _generic::main();
     _trait::main();
+    _lifetime::main();
 }
