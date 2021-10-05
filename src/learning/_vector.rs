@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 pub fn main() {}
 
 fn modify_when_iter() {

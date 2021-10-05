@@ -1,5 +1,6 @@
+#![allow(dead_code)]
+
 use std::cmp::PartialOrd;
-use std::collections::hash_map::Values;
 
 pub fn main() {}
 /*

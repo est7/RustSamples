@@ -1,4 +1,4 @@
-use std::fmt::Display;
+#![allow(dead_code)]
 
 pub fn main() {}
 

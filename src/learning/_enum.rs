@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 pub fn main() {}
 
 fn match_wildcard() {

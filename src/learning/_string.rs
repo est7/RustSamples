@@ -1,4 +1,4 @@
-use std::path::Display;
+#![allow(dead_code)]
 
 pub fn main() {}
 

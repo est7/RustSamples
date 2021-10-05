@@ -1,5 +1,6 @@
+#![allow(dead_code)]
+
 use std::{fs, io};
-use std::fmt::Error;
 use std::fs::File;
 use std::io::{ErrorKind, Read};
 
