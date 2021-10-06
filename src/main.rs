@@ -1,4 +1,4 @@
-use collections::{_closure, _enum, _generic, _guess_number, _hashmap, _lifetime, _loop, _ownership, _panic, _string, _struct, _test, _trait, _vector};
+use collections::{_closure, _deref, _enum, _generic, _guess_number, _hashmap, _lifetime, _loop, _ownership, _panic, _string, _struct, _test, _trait, _vector};
 
 fn main() {
     _enum::main();
@@ -15,4 +15,5 @@ fn main() {
     _lifetime::main();
     _test::main();
     _closure::main();
+    _deref::main();
 }

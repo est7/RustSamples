@@ -12,3 +12,4 @@ pub mod _trait;
 pub mod _lifetime;
 pub mod _test;
 pub mod _closure;
+pub mod _deref;
