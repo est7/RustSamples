@@ -2,9 +2,7 @@
 
 use std::ops::Deref;
 
-pub fn main() {
-    cons_list_ref();
-}
+pub fn main() {}
 
 fn deref_string() {
     // box比较牛逼的一点就是对他的解引用能够产生移动
