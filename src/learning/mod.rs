@@ -14,3 +14,4 @@ pub mod _test;
 pub mod _closure;
 pub mod _deref;
 pub mod _drop;
+pub mod _rc;

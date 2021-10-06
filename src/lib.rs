@@ -9,6 +9,7 @@ pub use learning::_lifetime;
 pub use learning::_loop;
 pub use learning::_ownership;
 pub use learning::_panic;
+pub use learning::_rc;
 pub use learning::_string;
 pub use learning::_struct;
 pub use learning::_test;
