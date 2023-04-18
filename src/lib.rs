@@ -3,7 +3,7 @@ pub use learning::_deref;
 pub use learning::_drop;
 pub use learning::_enum;
 pub use learning::_generic;
-pub use learning::_guess_number;
+pub use learning::_01_guess_number;
 pub use learning::_hashmap;
 pub use learning::_lifetime;
 pub use learning::_loop;

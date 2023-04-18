@@ -7,7 +7,7 @@ use std::{
 
 use rand::{self, Rng};
 
-use crate::learning::_guess_number::guess::Guess;
+use crate::learning::_01_guess_number::guess::Guess;
 
 pub fn main() {
 }
