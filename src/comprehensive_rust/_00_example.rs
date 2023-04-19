@@ -1,3 +1,7 @@
+#![allow(dead_code)]
+
+pub fn main() {}
+
 // 这是注释，单行注释...
 /* ...这是多行注释 *////////////////
 // 1. 基础   //
@@ -11,7 +15,7 @@ fn add2(x: i32, y: i32) -> i32 {
 }
 
 // 主函数(Main function)
-fn main() {
+fn example() {
 // 数字 (Numbers) //
 
 // 不可变绑定
@@ -96,8 +100,8 @@ fn main() {
 
     let origin: Point = Point { x: 0, y: 0 };
 
-// 匿名成员结构体，又叫“元组结构体”（‘tuple struct’）
-    structPoint2(i32, i32);
+    // 匿名成员结构体，又叫“元组结构体”（‘tuple struct’）
+    struct Point2(i32, i32);
 
     let origin2 = Point2(0, 0);
 
@@ -254,7 +258,7 @@ fn main() {
 // 可变引用 (Mutable reference)
 // 当一个变量被可变地借用时，也不可使用
     let mut var2 = 4;
-    let ref_var2: &muti32 = &mut var2;
+    let ref_var2: &mut i32 = &mut var2;
     *ref_var2 += 2;
 
     println!("{}", *ref_var2); // 6

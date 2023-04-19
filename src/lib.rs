@@ -1,3 +1,6 @@
+pub mod learning;
+pub mod comprehensive_rust;
+
 pub use learning::_closure;
 pub use learning::_deref;
 pub use learning::_drop;
@@ -16,5 +19,36 @@ pub use learning::_test;
 pub use learning::_trait;
 pub use learning::_vector;
 
-pub mod learning;
 
+pub use comprehensive_rust::_00_example;
+pub use comprehensive_rust::_01_types;
+pub use comprehensive_rust::_02_references;
+pub use comprehensive_rust::_03_slices_str;
+pub use comprehensive_rust::_04_functions;
+pub use comprehensive_rust::_05_print;
+pub use comprehensive_rust::_06_implicit_conversions;
+pub use comprehensive_rust::_07_arrays_loop;
+pub use comprehensive_rust::_08_variables;
+pub use comprehensive_rust::_09_type_inference;
+pub use comprehensive_rust::_10_static_and_const;
+pub use comprehensive_rust::_11_scopes_and_shadowing;
+pub use comprehensive_rust::_12_memory_management;
+pub use comprehensive_rust::_13_stack_vs_heap;
+pub use comprehensive_rust::_14_stack_memory;
+pub use comprehensive_rust::_15_manual_memory_management;
+pub use comprehensive_rust::_16_scope_based_memory_management;
+pub use comprehensive_rust::_17_garbage_collection;
+pub use comprehensive_rust::_18_rust_memory_management;
+pub use comprehensive_rust::_19_comparison;
+pub use comprehensive_rust::_20_ownership;
+pub use comprehensive_rust::_21_move_semantics;
+pub use comprehensive_rust::_22_moved_strings_in_rust;
+pub use comprehensive_rust::_23_moves_in_function_calls;
+pub use comprehensive_rust::_24_copying_and_cloning;
+pub use comprehensive_rust::_25_borrowing;
+pub use comprehensive_rust::_26_lifetimes;
+pub use comprehensive_rust::_27_lifetimes_in_function_calls;
+pub use comprehensive_rust::_28_lifetimes_in_data_structures;
+pub use comprehensive_rust::_29_exercises;
+pub use comprehensive_rust::_30_designing_a_library;
+pub use comprehensive_rust::_31_iterators_and_ownership;
