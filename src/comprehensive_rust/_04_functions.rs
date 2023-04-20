@@ -5,6 +5,7 @@ use std::f32::RADIX;
 pub fn main() {
     // fizzbuzz_to(20);
     //method();
+    // expression();
 }
 
 fn fizzbuzz_to(n: u32) {  // `-> ()` is normally omitted
@@ -63,3 +64,16 @@ fn pick_one<T>(a: T, b: T) -> T {
     if std::process::id() % 2 == 0 { a } else { b }
 }
 
+
+fn expression() {
+    let y = {
+        let x = 3;
+        x + 1
+    };
+    println!("The value of y is: {y}");
+}
+
+fn five() -> i32 {
+    return 45;
+    // 或者直接 45
+}
