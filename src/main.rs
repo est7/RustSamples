@@ -8,7 +8,7 @@ use collections::{
     _generic,
     _hashmap,
     _lifetime,
-    _loop,
+    _02_loop,
     _ownership,
     _panic,
     _rc,
@@ -113,7 +113,7 @@ fn learning() {
     _01_guess_number::main();
     _enum::main();
     _struct::main();
-    _loop::main();
+    _02_loop::main();
     _ownership::main();
     _string::main();
     _vector::main();

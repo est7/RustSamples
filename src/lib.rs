@@ -9,7 +9,7 @@ pub use learning::_generic;
 pub use learning::_01_guess_number;
 pub use learning::_hashmap;
 pub use learning::_lifetime;
-pub use learning::_loop;
+pub use learning::_02_loop;
 pub use learning::_ownership;
 pub use learning::_panic;
 pub use learning::_rc;
