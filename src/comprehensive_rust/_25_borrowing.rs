@@ -5,7 +5,7 @@ pub fn main() {
     // references_borrowing_02();
     // references_borrowing_03();
     // references_mut_borrowing();
-    slice_references();
+    // slice_references();
 }
 
 //-----------------------错误示范-------------------------------
@@ -84,7 +84,7 @@ fn slice_references() {
 
     let word = first_word(&s);
 
-    s.clear(); //❌ 错误！
+    //s.clear(); //❌ 错误！,s是不可变,word是可变,在不可变中间使用了s延伸来的word
 
     println!("the first word is: {}", word);
 }

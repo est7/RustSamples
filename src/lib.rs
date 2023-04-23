@@ -20,6 +20,7 @@ pub use learning::_trait;
 pub use learning::_vector;
 
 
+pub use comprehensive_rust::_00_playground;
 pub use comprehensive_rust::_00_example;
 pub use comprehensive_rust::_01_types;
 pub use comprehensive_rust::_02_references;

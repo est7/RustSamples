@@ -95,3 +95,4 @@ fn ownership_move() {
     let s = String::from("abc");
     takes_ownership(s);
 }
+//

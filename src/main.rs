@@ -20,6 +20,7 @@ use collections::{
 
 
 use collections::{
+    _00_playground,
     _00_example,
     _01_types,
     _02_references,
@@ -75,6 +76,7 @@ fn comprehensive_rust_day_3() {}
 fn comprehensive_rust_day_2() {}
 
 fn comprehensive_rust_day_1() {
+    _00_playground::main();
     _00_example::main();
     _01_types::main();
     _02_references::main();

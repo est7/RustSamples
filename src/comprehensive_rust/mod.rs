@@ -1,3 +1,4 @@
+pub mod _00_playground;
 pub mod _00_example;
 pub mod _01_types;
 pub mod _02_references;
