@@ -6,26 +6,35 @@ use std::time::Duration;
 pub fn main() {}
 
 fn get_context_value() {
-    // trait Fn
-    let a = 10;
-    // 捕获环境中的不可修改引用
-    let b = || a + 1;
-    b();
-    println!("a: {}", a);
+    闭包外取值();
 
-    // trait FnMut
-    let mut c = String::from("abc");
-    // 捕获环境中的可修改引用
-    let mut d = || c.push_str("d");
-    d();
-    println!("c: {}", c);
+    闭包内改值();
 
     // trait FnOnce
     let e = String::from("abc");
     // 捕获环境中的带所有权的数据
     let f = || e;
     f();
+    //❌所有权转让了,不能再用
     // println!("e: {}", e);
+}
+
+fn 闭包内改值() {
+// trait FnMut
+    let mut c = String::from("abc");
+    // 捕获环境中的可修改引用
+    let mut d = || c.push_str("d");
+    d();
+    println!("c: {}", c);
+}
+
+fn 闭包外取值() {
+// trait Fn
+    let a = 10;
+    // 捕获环境中的不可修改引用
+    let b = || a + 1;
+    b();
+    println!("a: {}", a);
 }
 
 

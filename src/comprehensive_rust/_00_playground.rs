@@ -1,18 +1,37 @@
-#![allow(dead_code)]
-
-
 pub fn main() {
-    let mut vec: Vec<i32> = Vec::new();
-    let mut v = vec![1, 2, 3];
-    vec.push(1);
-    v.push(8);
+    struct Cacher<T>
+        where T: Fn(u32) -> u32
+    {
+        calculation: T,
+        value: Option<u32>,
+    }
 
+    impl<T> Cacher<T>
+        where T: Fn(u32) -> u32
+    {
+        fn new(calculation: T) -> Cacher<T> {
+            Cacher {
+                calculation,
+                value: None,
+            }
+        }
 
-    let v = vec![1, 2, 3, 4, 5];
+        fn value(&mut self, arg: u32) -> u32 {
+            match self.value {
+                Some(v) => v,
+                None => {
+                    let v = (self.calculation)(arg);
+                    self.value = Some(v);
+                    v
+                }
+            }
+        }
+    }
 
-    let does_not_exist = &v[100];
-    let does_not_exist = v.get(100);
+    let mut c = Cacher::new(|a| a);
 
+    let v1 = c.value(1);
+    let v2 = c.value(2);
 
+    assert_eq!(v2, 2);
 }
-

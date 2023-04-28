@@ -1,6 +1,8 @@
 #![allow(dead_code)]
 
-pub fn main() {}
+pub fn main() {
+    map();
+}
 
 fn modify_when_iter() {
     let mut vec = vec![1, 2, 3];
@@ -106,5 +108,50 @@ fn vector_get() {
         println!("{}", value);
     } else {
         println!("!!!");
+    }
+}
+
+
+fn map() {
+    use std::collections::HashMap;
+
+    //示例 8-20：新建一个哈希 map 并插入一些键值对
+    let mut scores = HashMap::new();
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Yellow"), 50);
+
+    // 示例 8-21：用队伍列表和分数列表创建哈希 map
+    let teams = vec![String::from("Blue"), String::from("Yellow")];
+    let initial_scores = vec![10, 50];
+// 两个数组zip成一个map
+    let scores: HashMap<_, _> = teams.iter().zip(initial_scores.iter()).collect();
+
+    // 示例 8-22：展示一旦键值对被插入后就为哈希 map 所拥有
+    let field_name = String::from("Favorite color");
+    let field_value = String::from("Blue");
+    let mut map = HashMap::new();
+    map.insert(field_name, field_value);
+// 这里 field_name 和 field_value 不再有效，
+
+    // 示例 8-23：访问哈希 map 中储存的蓝队分数
+    let mut scores = HashMap::new();
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Yellow"), 50);
+    let team_name = String::from("Blue");
+    let score = scores.get(&team_name);
+
+    for (key, value) in &scores {
+        println!("{}: {}", key, value);
+    }
+
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Blue"), 25);
+
+    // 根据旧值更新一个值, 如果是第一次看到某个单词，就插入值 0。
+    let text = "hello world wonderful world";
+    let mut map = HashMap::new();
+    for word in text.split_whitespace() {
+        let count = map.entry(word).or_insert(0);
+        *count += 1;
     }
 }

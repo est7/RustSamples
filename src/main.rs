@@ -55,8 +55,7 @@ use collections::{
     _31_iterators_and_ownership,
 };
 
-
-
+use rand;
 
 fn main() {
     // learning();
